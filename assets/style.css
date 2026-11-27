@@ -1,0 +1,62 @@
+ 
+      body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        margin: 0;
+        padding: 24px;
+        background: linear-gradient(135deg, #eaf8ff, #c8ecff);
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      }
+
+      .login-card {
+        width: min(100%, 420px);
+        padding: clamp(24px, 6vw, 40px);
+        border: 1px solid rgba(112, 190, 225, 0.35);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 18px 50px rgba(55, 139, 180, 0.16);
+      }
+
+      .login-card h1 {
+        margin-bottom: 8px;
+        color: #174e6b;
+        font-size: clamp(1.6rem, 5vw, 2rem);
+        font-weight: 700;
+      }
+
+      .login-card .intro {
+        margin-bottom: 28px;
+        color: #648493;
+      }
+
+      .form-label {
+        color: #285d75;
+        font-weight: 600;
+      }
+
+      .form-control {
+        min-height: 48px;
+        border-color: #c4e3f1;
+        border-radius: 10px;
+      }
+
+      .form-control:focus {
+        border-color: #67b9df;
+        box-shadow: 0 0 0 0.2rem rgba(103, 185, 223, 0.2);
+      }
+
+      .login-button {
+        min-height: 48px;
+        border: 0;
+        border-radius: 10px;
+        background: #54acd3;
+        color: #fff;
+        font-weight: 600;
+      }
+
+      .login-button:hover {
+        background: #378fb8;
+        color: #fff;
+      }
+    

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f3faff;
+            color: #17364b;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            min-height: 100vh;
+            padding: 32px 18px;
+            background: linear-gradient(160deg, #b9e8f7, #d9f3fb);
+            border-right: 1px solid #a6d9eb;
+        }
+
+        .brand {
+            margin: 0 12px 32px;
+            color: #174e6b;
+            font-size: 1.35rem;
+            font-weight: 700;
+            letter-spacing: .02em;
+        }
+
+        .nav-links {
+            display: grid;
+            gap: 8px;
+        }
+
+        .nav-links a {
+            display: block;
+            padding: 13px 15px;
+            border-radius: 12px;
+            color: #24536a;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color .2s ease, color .2s ease, transform .2s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a:focus-visible {
+            background: #fff;
+            color: #087ba8;
+            outline: none;
+            transform: translateX(3px);
+        }
+
+        main {
+            flex: 1;
+            padding: 48px;
+        }
+
+        main h1 { margin-top: 0; color: #174e6b; }
+
+        @media (max-width: 600px) {
+            body { display: block; }
+
+            .sidebar {
+                width: 100%;
+                min-height: auto;
+                padding: 18px 16px;
+                border-right: 0;
+                border-bottom: 1px solid #a6d9eb;
+            }
+
+            .brand { margin: 0 8px 14px; }
+
+            .nav-links {
+                display: flex;
+                gap: 6px;
+            }
+
+            .nav-links a { flex: 1; padding: 11px 8px; text-align: center; }
+            .nav-links a:hover,
+            .nav-links a:focus-visible { transform: translateY(-2px); }
+            main { padding: 30px 22px; }
+        }
+    </style>
+</head>
+<body>
+    <aside class="sidebar" aria-label="Main navigation">
+        <p class="brand">Skyline</p>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+        </nav>
+    </aside>
+    <main id="home">
+        <h1>Welcome</h1>
+        <p>Explore the site using the navigation menu.</p>
+    </main>
+</body>
+</html>
